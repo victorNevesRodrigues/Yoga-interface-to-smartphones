@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Dev Contábil</title>
+  </head>
+  <body>
+    <div class="mainConteiner">
+      <header class="header" id="top">
+        <h2>Dev Contábil</h2>
+        <ul>
+          <a href="#bottom"><li>Quem Somos</li></a>
+          <a href="#mid"><li>Serviços</li></a>
+          <a href="#form" onclick="chameOAbacate()"><li>Contato</li></a>
+        </ul>
+      </header>
+      <h1>Dev Contábil</h1>
+          <form id="form" class="formContainer" action="https://formsubmit.co/vitinhoneves18@hotmail.com" method="POST">
+              <h3 class="h3b">Entre em Contato</h3>
+              <label class="label">
+                 <p>nome</p>
+                  <input
+            type="text"
+            name="nome"
+            placeholder="Digite Seu Nome"
+            required
+            />
+        </label>
+        <label class="label">
+          <p>Email</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="seuemail@gmail.com"
+            required
+            />
+        </label>
+        <label class="label">
+            <p>Telefone</p>
+          <input
+            type="text"
+            name="telefone"
+            placeholder="ddd+numero"
+            required
+            />
+        </label>
+        <label class="label">
+            <p>Fale Conosco</p>
+            <textarea class="textarea" name="duvidas" placeholder="Qual a Sua Dúvida?"></textarea>
+        </label>
+        <label class="label">
+            <button class="button" type="submit">Enviar</button>
+        </label>
+    </form>
+    </div>
+    <section class="services" id="mid">
+        <h1>Nossos Serviços</h1>
+        <div class="cards">
+        <div class="card">
+            <h5>Contabilidade Completa</h5>
+            <ul class="ul">
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h5>Cuidamos do seu négocio</h5>
+            <ul class="ul">
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h5>Cuidamos de você</h5>
+            <ul class="ul">
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+                <li>Imposto de Renda</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <section class="aboutUs" id="bottom">
+        <h2 class="about">Sobre Nós</h2>
+        <p class="p">Estamos presente no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais que já atuam ou desejam abrir seus negócios e ingressar no Brasil. 
+            <br><br>
+            Assessoramos investidores que queiram prospectar seus negócios no Brasil e investidores (“brasileiros”) interessados em fazer negócios em outros países. 
+            <br><br>
+            Oferecemos “backoffice” nas áreas Financeira, Recursos Humanos, Tributária e Contabilidade, inclusive a abertura, legalização e regularização de empresas e negócios. 
+            <br><br>
+            Com pesquisas de mercado, montamos toda estrutura organizacional, ambiente operacional e logística de suas atividades, com profissionais qualificados, competentes e continuamente treinados. 
+            <br><br>
+            Somos especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em IFRS. Assim, o Planejamento das Operações e suas consequências tributárias passam a ser condições de competitividade, inclusive sugerindo incorporação ou desmembramento de atividades. <br></p>
+    </section>
+</body>
+    <script>
+        let formulario = document.getElementById("form")
+        
+        
+        function chameOAbacate(){
+            formulario.className = ("formulariooo")
+        }
+        
+        
+        
+        </script>
+</html>
